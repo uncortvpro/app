@@ -7,13 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach ($users as $key=>$user)
-        <ul>
-            <li><b>Имя: </b>{{$user->name}}</li>
-            @foreach ($user->books as $book)
-                <li>{{$book->title}}</li>
-            @endforeach
-        </ul>
+    @foreach ($books as $key=>$book)
+    <li>{{$book->title}} - {{$book->author->name}}</li>
+        
     @endforeach
 </body>
 </html>

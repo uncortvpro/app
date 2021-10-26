@@ -13,3 +13,5 @@
 
 
 Route::get('/', 'StartController@index');
+Route::get('/books','StartController@books');
+Route::get('/categories','StartsController@categories');
